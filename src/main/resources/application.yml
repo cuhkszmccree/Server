@@ -1,0 +1,16 @@
+server:
+  port: 8888
+
+eureka:
+  client:
+    #标注当前工程是否注册到eureka
+    register-with-eureka: false
+    #标注当前工程是否从eureka获取注册信息
+    fetch-registry: false
+    service-url:
+      defaultZone: http://eureka1:8888/eureka
+  instance:
+    hostname: eureka1
+spring:
+  application:
+    name: eureka-server
